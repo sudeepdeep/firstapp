@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<style>
+	ul{
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+	}
+	li a{
+		text-decoration: none;
+	}
+</style>
+<body>
+	<center>
+<h1>Welcome to the website</h1>
+<ul>
+	<li><a href = "/">Home</a></li>
+	<li><a href= "/contact">Contact</a></li>
+</ul>
+{% block content %}{% endblock %}
+</center>
+</body>
+</html>
